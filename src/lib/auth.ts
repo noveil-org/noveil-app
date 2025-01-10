@@ -17,6 +17,6 @@ export async function idenaLogin(token: string | null, addr: string | null) {
     });
     const url = new URL(`${PUBLIC_IDENA_APP_BASE_URL}/dna/signin`);
     url.search = params.toString();
-    window.open(url.toString());
+    window.open(url.toString(), "_self");
   }
 }
